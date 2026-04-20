@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pt
+!yolov8n.pt
+runs/
+alerts/*.jpg
+videos/*.mp4
+videos/*.avi
+.venv/
+venv/
+.idea/
+.vscode/
+*.onnx
