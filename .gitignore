@@ -1,13 +1,67 @@
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Model weights (giữ yolov8n.pt làm baseline)
 *.pt
 !yolov8n.pt
+*.onnx
+
+# Runtime artifacts
 runs/
 alerts/*.jpg
 videos/*.mp4
 videos/*.avi
-.venv/
-venv/
+app_data.db
+*.sqlite
+*.sqlite3
+
+# Khoá mã hoá secret (tuyệt đối không commit)
+.app_key
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec.bak
+
+# IDE
 .idea/
 .vscode/
-*.onnx
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Datasets & training data (file lớn, không commit)
+training_data/
+data/images/
+data/labels/
+data/combined/
+Fire - Smoke Detection.v1-version-1.yolov8/
+
+# Packaged artifacts
+_pack_tmp/
+FireSmokeMonitor_source.zip
+logs/
+*.log
+
+# Media large files
+*.mp4
+*.avi
+*.mkv
+*.mov
+alerts/
+videos/
+
+# Models thư mục
+models/*.pt
+models/incremental/
+
